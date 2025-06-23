@@ -1,0 +1,15 @@
+re = ['홍길', '한나리', '전우치']
+print(f'현재 프로그래밍 수강 신청자는 {re}입니다.')
+l = input('추가할 학생의 이름: ')
+print(f'{l} 학생의 신청이 완료 됨.')
+re.append(l)
+print(f'최종 신청자: {re}')
+l = input('철회:    ')
+print(f'{l} 철회 끝 ')
+re.remove(l)
+print(f'최종: {re}')
+na = input('변경 전: ')
+an = input('변경 후: ')
+re[re.index(na)] = an
+print(f'{na} -> {an} 변경 완료')
+print(f'최종: {re}')
